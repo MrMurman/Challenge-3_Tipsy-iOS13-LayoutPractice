@@ -10,9 +10,11 @@
 		6F57427C280574410077BFFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F57427B280574410077BFFB /* AppDelegate.swift */; };
 		6F57427E280574410077BFFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F57427D280574410077BFFB /* SceneDelegate.swift */; };
 		6F574280280574410077BFFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F57427F280574410077BFFB /* ViewController.swift */; };
-		6F574283280574410077BFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F574281280574410077BFFB /* Main.storyboard */; };
 		6F574285280574430077BFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F574284280574430077BFFB /* Assets.xcassets */; };
 		6F574288280574430077BFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F574286280574430077BFFB /* LaunchScreen.storyboard */; };
+		6F57429128057D350077BFFB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F57429028057D350077BFFB /* DetailViewController.swift */; };
+		6F57429328057EA30077BFFB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F57429228057EA20077BFFB /* Colors.swift */; };
+		6F5742972805B2010077BFFB /* TipCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5742962805B2010077BFFB /* TipCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		6F57427B280574410077BFFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F57427D280574410077BFFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6F57427F280574410077BFFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6F574282280574410077BFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F574284280574430077BFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F574287280574430077BFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F574289280574430077BFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F57429028057D350077BFFB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6F57429228057EA20077BFFB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		6F5742962805B2010077BFFB /* TipCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,31 @@
 			children = (
 				6F57427B280574410077BFFB /* AppDelegate.swift */,
 				6F57427D280574410077BFFB /* SceneDelegate.swift */,
-				6F57427F280574410077BFFB /* ViewController.swift */,
-				6F574281280574410077BFFB /* Main.storyboard */,
+				6F5742982805B20C0077BFFB /* Model */,
+				6F57428F280578560077BFFB /* Controllers */,
 				6F574284280574430077BFFB /* Assets.xcassets */,
 				6F574286280574430077BFFB /* LaunchScreen.storyboard */,
 				6F574289280574430077BFFB /* Info.plist */,
 			);
 			path = "Challenge-3_Tipsy-iOS13-LayoutPractice";
+			sourceTree = "<group>";
+		};
+		6F57428F280578560077BFFB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F57427F280574410077BFFB /* ViewController.swift */,
+				6F57429028057D350077BFFB /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6F5742982805B20C0077BFFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F57429228057EA20077BFFB /* Colors.swift */,
+				6F5742962805B2010077BFFB /* TipCalculator.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +149,6 @@
 			files = (
 				6F574288280574430077BFFB /* LaunchScreen.storyboard in Resources */,
 				6F574285280574430077BFFB /* Assets.xcassets in Resources */,
-				6F574283280574410077BFFB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +160,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F574280280574410077BFFB /* ViewController.swift in Sources */,
+				6F57429328057EA30077BFFB /* Colors.swift in Sources */,
 				6F57427C280574410077BFFB /* AppDelegate.swift in Sources */,
+				6F5742972805B2010077BFFB /* TipCalculator.swift in Sources */,
 				6F57427E280574410077BFFB /* SceneDelegate.swift in Sources */,
+				6F57429128057D350077BFFB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6F574281280574410077BFFB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F574282280574410077BFFB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6F574286280574430077BFFB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +308,6 @@
 				INFOPLIST_FILE = "Challenge-3_Tipsy-iOS13-LayoutPractice/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +335,6 @@
 				INFOPLIST_FILE = "Challenge-3_Tipsy-iOS13-LayoutPractice/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
